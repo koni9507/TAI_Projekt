@@ -16,9 +16,19 @@
       <li class="nav-item">
         <a class="nav-link" routerLink="/login">Logowanie<span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" *ngIf="authService.isLoggedIn()">
         <a class="nav-link" routerLink="/quiz">Quiz<span class="sr-only">(current)</span></a>
       </li>
     </ul>
+    <ul class="nav navbar-nav navbar-right" *ngIf="authService.isLoggedIn()">
+      <li class="button">
+        <button (click)="logOut()" class="btn btn-lg btn-pink btn-block" type="submit" title="Przycisk wyloguj">Wyloguj
+        </button>
+      </li>
+    </ul>
   </div>
+
+
 </nav>
+
+

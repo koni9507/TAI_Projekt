@@ -42,7 +42,7 @@ const appRoutes: Routes = [
     path: 'quiz',
     component: QuizComponent,
     canActivate: [AdminGuard],
-    data: {state: 'user'}
+    data: {state: 'admin'}
   },
   {
     path: 'blog',

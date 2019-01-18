@@ -14,8 +14,8 @@
   padding-right: 300px;
 }
 .button{
-  padding-top: 15px;
 
+  width: 100px;
 }
 #buttonContact1, #buttonContact2{
   background-color: deeppink;
