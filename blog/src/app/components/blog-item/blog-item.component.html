@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="col-md-6 mx-auto d-block mt-5">
+    <p class="card-text">
+      Brygada:
+		<app-blog-item-image [brygada]="brygada"></app-blog-item-image>
+    </p>
+        <p class="card-text">
+          Nazwa przedmiotu:
+		      <app-blog-item-text [text]="text | summary:80" [id]="id"></app-blog-item-text>
+		    </p>
+		    <a [routerLink]="['/blog/details/',id]">Czytaj dalej..</a>
+      </div>
+    </div>
+

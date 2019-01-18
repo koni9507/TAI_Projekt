@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="col-sm-6 mx-auto d-block mt-5">
+    <p class="card-text">
+      Brygada:
+		<app-blog-item-image [brygada]="item.brygada"></app-blog-item-image>
+    </p>
+        <p class="card-text">
+          Tytuł:
+		  <app-blog-item-text [text]="item.title"></app-blog-item-text>
+		</p>
+    <p class="card-text">
+      Stan:
+    <app-blog-item-text [stan]="item.stan"></app-blog-item-text>
+    </p>
+
+    <p class="card-text">
+      Liczebnosc:
+      <app-blog-item-text [liczebnosc]="item.liczebnosc"></app-blog-item-text>
+    </p>
+
+    <p class="card-text">
+      Uwagi:
+      <app-blog-item-text [content]="item.content"></app-blog-item-text>
+    </p>
+  </div>
+</div>

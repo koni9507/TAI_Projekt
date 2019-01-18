@@ -1,0 +1,79 @@
+<div class="container-fluid">
+<div class="form-sec">
+  <h4>Uzupełnij dane</h4>
+
+  <form name="qryform" id="qryform" method="post" action="mail.php" onsubmit="return(validate());" novalidate="novalidate">
+    <div class="form-group">
+      <label>Imie:</label>
+      <br>
+      <input type="text" class="form-control" id="name" placeholder="Podaj imie" name="name">
+    </div>
+
+
+
+    <div class="form-group">
+      <label>Nazwisko:</label>
+      <br>
+      <input type="text" class="form-control" id="surname" placeholder="Podaj nazwisko" name="surname">
+    </div>
+
+
+
+    <div class="form-group">
+      <label>Email:</label>
+      <br>
+      <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email">
+    </div>
+
+
+
+    <div class="form-group">
+      <label>Płeć:</label>
+      <br>
+      <input type="radio"
+             name="sex"
+             id="man"
+             value="man"
+             checked required/>
+      <label for="man">Mężczynza</label>
+      <input type="radio"
+             name="sex"
+             id="woman"
+             value="woman"
+             checked required/>
+      <label for="man">Kobieta</label>
+    </div>
+
+
+    <div class="form-group">
+      <label for="description">Opis:</label>
+      <br>
+      <textarea id="description" name="description" cols="20" rows="3" required></textarea>
+    </div>
+
+
+    <div class="form-group">
+      <label for="age">Wiek:</label>
+      <br>
+      <input type="number" name="age" id="age" min="18"/>
+    </div>
+
+
+    <div class="form-group">
+      <label for="material">Stan cywillny:</label>
+      <br>
+      <select id="material" name="material" required>
+        <option>Panna/Kawaler</option>
+        <option>Mężatka/Żonaty</option>
+        <option>Wdowa/Wdowiec</option>
+      </select>
+    </div>
+    <br/>
+
+    <button type="reset" class="btn btn-default">Wyczyść</button>
+    <button type="submit" class="btn btn-default">Wyślij</button>
+  </form>
+</div>
+
+
+</div>
