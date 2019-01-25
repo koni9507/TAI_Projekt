@@ -57,10 +57,17 @@ async function createNewOrUpdate(data) {
   });
 }
 
+
+
+
+
+
 export default {
   query: query,
   get: get,
   createNewOrUpdate: createNewOrUpdate,
+
+
 
   model: PostModel
 }

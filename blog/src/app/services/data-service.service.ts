@@ -29,5 +29,8 @@ export class DataServiceService {
     return this.http.post(this.url + '/api/post/',  data).pipe();
   }
 
+  deletePost(data) {
+    return this.http.post(this.url + '/api/post/:id/delete/',  data);
+  }
 
 }

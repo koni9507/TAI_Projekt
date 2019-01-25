@@ -39,12 +39,6 @@ const appRoutes: Routes = [
     component: ContactComponent
   },
   {
-    path: 'quiz',
-    component: QuizComponent,
-    canActivate: [AdminGuard],
-    data: {state: 'admin'}
-  },
-  {
     path: 'blog',
     component: BlogHomeComponent
   },

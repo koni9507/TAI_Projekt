@@ -1,7 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import {DataServiceService} from '../../services/data-service.service';
-import {group} from '@angular/animations';
+import {AuthService} from "../../services/auth.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-blog-item-detail',
@@ -13,7 +14,7 @@ export class BlogItemDetailComponent implements OnInit {
   id;
   item = {};
 
-  constructor(private dataServ: DataServiceService, private route: ActivatedRoute) { }
+  constructor(private dataServ: DataServiceService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
     this.route.params.subscribe(params => {
@@ -25,4 +26,6 @@ export class BlogItemDetailComponent implements OnInit {
     })
   }
 
-}
+
+
+ }

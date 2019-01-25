@@ -1,4 +1,7 @@
 <br>
+<h1 class="entry-title"><span> Zaloguj się</span></h1>
+<hr>
+<br>
 <div class="form-group">
 <form action="post" autocomplete="off" method="POST">
   <div class="input-group">
@@ -11,7 +14,10 @@
            name="password" placeholder="Hasło" title="Wprowadź hasło">
   </div>
 <br>
-  <button (click)="signIn()" class="btn btn-lg btn-pink btn-block" type="submit" title="Przycisk zaloguj">
-    Zaloguj
-  </button>
+  <div class="button">
+    <div class="col-xs-offset-3 col-xs-10">
+      <button (click)="signIn()" name="Submit" type="submit" class="btn btn-primary">Zaloguj
+      </button>
+    </div>
+  </div>
 </form></div>

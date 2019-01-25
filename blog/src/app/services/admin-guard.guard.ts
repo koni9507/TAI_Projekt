@@ -10,7 +10,7 @@ export class AdminGuard implements CanActivate {
 
   canActivate() {
     if (this.authService.isLoggedIn()) {
-      return true;
+  return false;
     }
   }
 

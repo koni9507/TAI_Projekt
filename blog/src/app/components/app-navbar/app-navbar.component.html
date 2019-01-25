@@ -7,17 +7,14 @@
       <li class="nav-item">
         <a class="nav-link" routerLink="">Strona główna<span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/blog">Blog<span class="sr-only">(current)</span></a>
+      <li class="nav-item" *ngIf="authService.isLoggedIn()">
+        <a class="nav-link" routerLink="/blog">Rejestr wydatków<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" routerLink="/signup">Rejestracja<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" routerLink="/login">Logowanie<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item" *ngIf="authService.isLoggedIn()">
-        <a class="nav-link" routerLink="/quiz">Quiz<span class="sr-only">(current)</span></a>
       </li>
     </ul>
     <ul class="nav navbar-nav navbar-right" *ngIf="authService.isLoggedIn()">

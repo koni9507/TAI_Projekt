@@ -29,6 +29,9 @@ const postEndpoint = (router) => {
     applicationException.errorHandler(error, response);
     }
   });
+
+
+
 };
 
 export default postEndpoint;
